@@ -26,9 +26,7 @@ jobs:
       run: mvn hpi:hpi
     - uses: actions/checkout@v2
     - name: Display structure of downloaded files
-      run: ls -R
-    - uses: actions/download-artifact@v2
-      with:
-        name: ./
+      run: ls -l
+
 
 
