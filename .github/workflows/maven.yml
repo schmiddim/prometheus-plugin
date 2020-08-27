@@ -26,8 +26,8 @@ jobs:
       run: mvn hpi:hpi
     - name: Display structure of downloaded files
       run: ls -l target/prometheus.hpi
-    - uses: actions/download-artifact@v2
+    - uses: actions/upload-artifact@v2
       with:
-        name: ~/target/prometheus.hpi
+        name: target/prometheus.hpi
 
 
