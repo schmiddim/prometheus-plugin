@@ -25,7 +25,7 @@ jobs:
     - name: Install
       run: mvn hpi:hpi
     - name: Display structure of downloaded files
-      run: ls -l
+      run: ls -l target
     - uses: actions/download-artifact@v2
       with:
         name: target
